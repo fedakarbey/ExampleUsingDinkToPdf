@@ -1,0 +1,93 @@
+@ExampleUsingDinkToPdf.Api_HostAddress = http://localhost:5137
+
+POST {{ExampleUsingDinkToPdf.Api_HostAddress}}/api/pdf/generate
+Content-Type: application/json
+Accept: application/pdf
+
+{
+  "TemplateName": "ReportTemplate",
+  "ReportTitle": "2025 Yýlý Ocak Ayý Müþteri Raporu",
+  "ReportDate": "2025-01-19",
+  "CustomerInfo": [
+    {
+      "CustomerName": "Ahmet Yýlmaz",
+      "Amount": 1500.75,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Mehmet Kaya",
+      "Amount": 1200.50,
+      "Status": "Beklemede"
+    },
+    {
+      "CustomerName": "Ayþe Demir",
+      "Amount": 3000.00,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Fatma Erdem",
+      "Amount": 500.25,
+      "Status": "Ýptal Edildi"
+    },
+    {
+      "CustomerName": "Ali Çelik",
+      "Amount": 1800.00,
+      "Status": "Beklemede"
+    },
+    {
+      "CustomerName": "Zeynep Kýlýç",
+      "Amount": 2700.00,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Murat Aslan",
+      "Amount": 900.00,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Nazan Yýldýz",
+      "Amount": 1300.90,
+      "Status": "Beklemede"
+    },
+    {
+      "CustomerName": "Serkan Tekin",
+      "Amount": 2200.00,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Emine Öztürk",
+      "Amount": 750.45,
+      "Status": "Ýptal Edildi"
+    },
+    {
+      "CustomerName": "Mustafa Þahin",
+      "Amount": 2150.60,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Seda Güler",
+      "Amount": 1400.00,
+      "Status": "Beklemede"
+    },
+    {
+      "CustomerName": "Ebru Polat",
+      "Amount": 2200.90,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Kadir Coþkun",
+      "Amount": 500.00,
+      "Status": "Ödenmiþ"
+    },
+    {
+      "CustomerName": "Gökhan Aydýn",
+      "Amount": 1100.25,
+      "Status": "Beklemede"
+    },
+    {
+      "CustomerName": "Buse Kara",
+      "Amount": 2500.00,
+      "Status": "Ýptal Edildi"
+    }
+  ]
+}
